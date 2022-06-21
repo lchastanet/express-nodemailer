@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer")
 
 require("dotenv").config()
 
-sendMail = async (recip, template) => {
+const sendMail = async (recip, template) => {
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
