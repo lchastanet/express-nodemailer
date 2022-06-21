@@ -1,1 +1,1 @@
-exports.mailController = (req, res) => {}
+exports.forgotten = (req, res) => {}
