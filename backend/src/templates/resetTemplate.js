@@ -1,4 +1,7 @@
-const resetTemplate = (link) => `
+const resetTemplate = (link) => {
+  return {
+    subject: "Reset your password",
+    body: `
 <!DOCTYPE html>
 
 <html
@@ -715,6 +718,8 @@ const resetTemplate = (link) => `
     </table>
   </body>
 </html>
-`
+`,
+  }
+}
 
 module.exports = resetTemplate
